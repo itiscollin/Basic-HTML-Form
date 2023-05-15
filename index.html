@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label>First Name:
+            <input type="text" name="First Name" placeholder="John"/>
+        </label>
+           <div>
+            <label>Last Name:
+            <input type="text" name="Last Name" placeholder="Doe"/>
+        </label>
+           </div>
+        <div>
+            <label>Email:
+            <input type="email" name="Email" placeholder="name@domain.com"/>
+        </label>
+        </div>
+        <div>
+            <label>Gender:
+            <input type="radio" name="Gender" value="Male"/> Male
+            <input type="radio" name="Gender" value="Female"/> Female
+            <input type="radio" name="Gender" value="Prefer not to say"/> Prefer not to say
+        </label>
+        </div>
+        <div>
+            <label>Address:
+            </label>
+        </div>
+            <textarea name="Address"> </textarea>
+        
+        <div>
+        </fieldset>
+        <fieldset>
+            <legend>Survey</legend>
+            <div>
+            <label>
+                What kind of drink do you like at a cafe?
+              
+                <select name="drink">
+                    <option>Drink</option>
+                    <option value="Coffee">Coffee</option>
+                    <option value="Tea">Tea</option>
+                    <option value="Juice">Juice</option>
+                </select>
+            </label>
+            </div>
+            <div>
+            <label>How often do you visit a cafe per week?</label>
+            <br>
+            <input type="radio" name="frequency" value="0 - 1 time a week" />0 - 1 time a week
+            <input type="radio" name="frequency" value="1 - 2 time a week" />1 - 2 time a week
+            <br>
+            <input type="radio" name="frequency" value="2 - 4 time a week" />2 - 4 time a week
+            <input type="radio" name="frequency" value="4 - 7 time a week" />4 - 7 time a week
+            </div>
+            <div>
+                <label>Would you say you are an avid cafe visitor?
+               
+                <select name="avid">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </label>
+            </div>
+            <div>
+                <label>
+                    How long does it take you to get to your favourite cafe?
+                    <input type="text" placeholder="30 min"/>
+                </label>
+            </div>
+            <div>
+                <label>Comment about your favourite cafe</label>
+            </div>
+            <textarea name="comment"></textarea>
+            <div>
+            <button name="Reset Form" value="Reset Form"> Reset Form</button> 
+            <button name="Submit Survey" value="Submit Survey"> Submit Survey</button> 
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
